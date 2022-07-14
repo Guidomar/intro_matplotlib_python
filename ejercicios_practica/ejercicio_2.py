@@ -46,4 +46,20 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle("Graficos funciones de Y")
+    ax = fig.add_subplot()
+    
+
+    # Grafico de ax1
+    ax.plot(x, y1, color ='green', label= 'Y1= x^2')
+    ax.plot(x, y2, color ='red', label='Y2= x^3')
+    ax.set_facecolor('whitesmoke')
+    ax.set_ylabel('y')
+    ax.set_xlabel('x')
+    ax.set_xlim(-4,4)
+    ax.set_ylim(-64,64)
+    ax.legend()
+    ax.grid()
+    plt.show()
     print("terminamos")

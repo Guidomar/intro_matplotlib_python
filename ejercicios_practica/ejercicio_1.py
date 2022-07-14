@@ -34,5 +34,17 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Gráfico de Y en función de X^2', fontsize =16)
+    ax = fig.add_subplot()
 
+    ax.plot(x,y, color ='r', label= 'Y= x^2' )
+    ax.set_facecolor('grey')
+    ax.set_ylabel("X^2")
+    ax.set_xlabel("X")
+    ax.set_xlim(-10,11)
+    ax.set_ylim(-100,121)
+    ax.legend()
+    ax.grid()
+    plt.show()
     print("terminamos")
